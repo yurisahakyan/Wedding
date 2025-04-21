@@ -1,46 +1,85 @@
+/* Global Styles */
 body {
   margin: 0;
-  padding: 0;
   font-family: 'Open Sans', sans-serif;
-  background-color: #fdf6f0;
+  background-color: #f9f7f6;
   color: #333;
+  line-height: 1.6;
 }
 
-.hero {
-  background-color: #fff0eb;
-  padding: 60px 20px;
-  text-align: center;
-}
-
-.hero h1 {
+h1, h2 {
   font-family: 'Great Vibes', cursive;
-  font-size: 3rem;
-  color: #c97b63;
-  margin: 0;
-}
-
-.hero p {
-  font-size: 1.2rem;
-  margin-top: 10px;
-  color: #666;
-}
-
-section {
-  padding: 40px 20px;
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-h2 {
-  font-family: 'Great Vibes', cursive;
-  font-size: 2rem;
-  color: #a15444;
+  color: #8e4e4d;
   margin-bottom: 10px;
 }
 
-.section p, ul {
-  font-size: 1rem;
-  line-height: 1.6;
+h1 {
+  font-size: 4rem;
+  margin: 0;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+/* Hero Section */
+.hero {
+  background-image: url('https://images.unsplash.com/photo-1461225913253-81db6026022a'); /* Unsplash image */
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  color: white;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+
+.hero-content {
+  z-index: 2;
+}
+
+.date {
+  font-size: 1.5rem;
+  margin-top: 10px;
+}
+
+.save-the-date {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-top: 15px;
+  text-transform: uppercase;
+}
+
+/* Info Section */
+.info {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.info p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+}
+
+/* Event Details Section */
+.details {
+  padding: 40px 20px;
+  background-color: #f0e6e1;
+  text-align: center;
+}
+
+.details p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+/* Schedule Section */
+.schedule {
+  padding: 40px 20px;
+  text-align: center;
 }
 
 .schedule ul {
@@ -49,43 +88,54 @@ h2 {
 }
 
 .schedule li {
-  margin-bottom: 10px;
+  font-size: 1.2rem;
+  margin-bottom: 12px;
+}
+
+/* RSVP Section */
+.rsvp {
+  padding: 40px 20px;
+  background-color: #f0e6e1;
+  text-align: center;
 }
 
 .rsvp form {
   display: flex;
   flex-direction: column;
-  gap: 10px;
-  max-width: 400px;
+  gap: 15px;
+  max-width: 500px;
   margin: auto;
 }
 
-.rsvp input,
-.rsvp textarea {
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 6px;
+.rsvp input, .rsvp textarea {
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
   font-size: 1rem;
+  margin: 5px 0;
 }
 
 .rsvp button {
-  background-color: #c97b63;
+  padding: 14px;
+  font-size: 1.1rem;
+  background-color: #8e4e4d;
   color: white;
   border: none;
-  padding: 12px;
-  font-size: 1rem;
-  border-radius: 6px;
+  border-radius: 8px;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
 
 .rsvp button:hover {
-  background-color: #a65f4d;
+  background-color: #7a3e3b;
 }
 
+/* Footer Section */
 footer {
   text-align: center;
-  padding: 20px;
-  font-size: 0.9rem;
-  color: #aaa;
+  padding: 30px 20px;
+  background-color: #8e4e4d;
+  color: white;
+  font-size: 1rem;
+  letter-spacing: 1px;
 }

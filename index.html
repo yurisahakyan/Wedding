@@ -1,69 +1,145 @@
 <!DOCTYPE html>
-<html lang="hy">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Love Letter</title>
-  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@300;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css" />
+  <title>Wedding Invitation</title>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Open+Sans:wght@300;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Open Sans', sans-serif;
+      background-color: #fdf6f0;
+      color: #333;
+    }
+
+    .hero {
+      background-color: #fff0eb;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-family: 'Great Vibes', cursive;
+      font-size: 3rem;
+      color: #c97b63;
+      margin: 0;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      margin-top: 10px;
+      color: #666;
+    }
+
+    section {
+      padding: 40px 20px;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    h2 {
+      font-family: 'Great Vibes', cursive;
+      font-size: 2rem;
+      color: #a15444;
+      margin-bottom: 10px;
+    }
+
+    .section p, ul {
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+
+    .schedule ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .schedule li {
+      margin-bottom: 10px;
+    }
+
+    .rsvp form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      max-width: 400px;
+      margin: auto;
+    }
+
+    .rsvp input,
+    .rsvp textarea {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 1rem;
+    }
+
+    .rsvp button {
+      background-color: #c97b63;
+      color: white;
+      border: none;
+      padding: 12px;
+      font-size: 1rem;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .rsvp button:hover {
+      background-color: #a65f4d;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+      color: #aaa;
+    }
+  </style>
 </head>
 <body>
 
-  <section class="hero">
-    <h1 class="title">Anna & David</h1>
-    <p class="subtitle">22/09/2024</p>
-    <p class="save-date">SAVE THE DATE</p>
+  <div class="hero">
+    <h1>Anna & David</h1>
+    <p>June 15, 2025 - Yerevan, Armenia</p>
+    <p>SAVE THE DATE</p>
+  </div>
+
+  <section class="section">
+    <h2>You're Invited</h2>
+    <p>We joyfully invite you to join us on our wedding day as we celebrate love, laughter, and happily ever after.</p>
   </section>
 
-  <section class="intro">
-    <p>Մեր կյանքում սպասվում է մեծ փոփոխություն։ Ցանկանում ենք, որ այդ հիասքանչ օրը մեր կողքին լինեն միայն մեզ հարազատ և թանկագին մարդիկ։ Ուրախ կլինենք Ձեզ հետ կիսելու մեզ համար այդքան կարևոր օրը։</p>
+  <section class="section">
+    <h2>Event Details</h2>
+    <p><strong>Ceremony:</strong> 3:00 PM at St. Hovhannes Church</p>
+    <p><strong>Reception:</strong> 6:00 PM at Tufenkian Heritage Hotel</p>
   </section>
 
-  <section class="info">
-    <h2>Միջոցառման Տեղեկություն</h2>
-    <p><strong>Պսակադրության արարողություն՝</strong> Սուրբ Սարգիս եկեղեցում (Նոր Նորք)</p>
-    <p><strong>Հարսանյաց հանդես՝</strong> «Հայրիկ» ռեստորանի «Պապիկ» սրահում</p>
-    <p><strong>Հասցե՝</strong> Երևան, Պարոնյան փող., 40</p>
-  </section>
-
-  <section class="schedule">
-    <h2>Ժամկետային Հերթականություն</h2>
+  <section class="section schedule">
+    <h2>Schedule</h2>
     <ul>
-      <li>15:30 – Հյուրերի ժամանում</li>
-      <li>16:00 – Պսակադրության արարողություն</li>
-      <li>18:00 – Հարսանյաց հանդես</li>
-      <li>00:00 – Միջոցառման ավարտ</li>
+      <li>15:00 - Guest Arrival</li>
+      <li>15:30 - Ceremony</li>
+      <li>18:00 - Reception Dinner</li>
+      <li>00:00 - Farewell</li>
     </ul>
   </section>
 
-  <section class="note">
-    <p>❗ Սիրելի՛ հյուրեր, եկեք վայելենք այս գեղեցիկ օրը առանց մեր փոքրիկ բալիկների։</p>
-    <p>❗ Խնդրում ենք խուսափել սպիտակ երանգով զգեստներից։</p>
-  </section>
-
-  <section class="group">
-    <p>📸 Բոլորիս հարմարության համար ստեղծել ենք Telegram խումբ՝ կիսվելու հարսանիքի լուսանկարներով և տեսանյութերով։</p>
-    <a href="https://t.me/your_group_link" target="_blank" class="btn">Միանալ Telegram խմբին</a>
-  </section>
-
-  <section class="rsvp">
+  <section class="section rsvp">
     <h2>RSVP</h2>
-    <p>Խնդրում ենք լրացնել հարցաթերթիկը մինչև սեպտեմբերի 15-ը։</p>
     <form action="https://formspree.io/f/your-form-id" method="POST">
-      <input type="text" name="name" placeholder="Ձեր անունը" required>
-      <input type="email" name="email" placeholder="Էլ․ հասցե" required>
-      <textarea name="message" placeholder="Հաղորդագրություն (ըստ ցանկության)"></textarea>
-      <button type="submit">Ուղարկել</button>
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Leave a message..." rows="4"></textarea>
+      <button type="submit">Send RSVP</button>
     </form>
   </section>
 
-  <section class="map">
-    <h2>Քարտեզ</h2>
-    <iframe src="https://www.google.com/maps/embed?pb=..." width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-  </section>
-
   <footer>
-    <p>With Love, Anna & David 💕</p>
+    <p>With Love, Anna & David 💖</p>
   </footer>
 
 </body>

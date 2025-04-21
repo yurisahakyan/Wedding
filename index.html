@@ -1,41 +1,70 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hy">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Our Wedding</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Love Letter</title>
   <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@300;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="container">
-    <h1 class="names">Anna & David</h1>
-    <p class="date">June 15, 2025 • Yerevan, Armenia</p>
 
-    <div class="section">
-      <h2>You're Invited</h2>
-      <p>We joyfully invite you to our wedding celebration, a day filled with love, laughter, and cherished memories.</p>
-    </div>
+  <section class="hero">
+    <h1 class="title">Anna & David</h1>
+    <p class="subtitle">22/09/2024</p>
+    <p class="save-date">SAVE THE DATE</p>
+  </section>
 
-    <div class="section">
-      <h2>Details</h2>
-      <p><strong>Ceremony:</strong> 3:00 PM at St. Hovhannes Church, Kond</p>
-      <p><strong>Reception:</strong> 6:00 PM at Tufenkian Heritage Hotel</p>
-    </div>
+  <section class="intro">
+    <p>Մեր կյանքում սպասվում է մեծ փոփոխություն։ Ցանկանում ենք, որ այդ հիասքանչ օրը մեր կողքին լինեն միայն մեզ հարազատ և թանկագին մարդիկ։ Ուրախ կլինենք Ձեզ հետ կիսելու մեզ համար այդքան կարևոր օրը։</p>
+  </section>
 
-    <div class="section">
-      <h2>RSVP</h2>
-      <form action="https://formspree.io/f/your-form-id" method="POST">
-        <input type="text" name="name" placeholder="Your Name" required />
-        <input type="email" name="email" placeholder="Your Email" required />
-        <textarea name="message" placeholder="Leave a message..." rows="4"></textarea>
-        <button type="submit">Send RSVP</button>
-      </form>
-    </div>
+  <section class="info">
+    <h2>Միջոցառման Տեղեկություն</h2>
+    <p><strong>Պսակադրության արարողություն՝</strong> Սուրբ Սարգիս եկեղեցում (Նոր Նորք)</p>
+    <p><strong>Հարսանյաց հանդես՝</strong> «Հայրիկ» ռեստորանի «Պապիկ» սրահում</p>
+    <p><strong>Հասցե՝</strong> Երևան, Պարոնյան փող., 40</p>
+  </section>
 
-    <footer>
-      <p>With love, Anna & David 💌</p>
-    </footer>
-  </div>
+  <section class="schedule">
+    <h2>Ժամկետային Հերթականություն</h2>
+    <ul>
+      <li>15:30 – Հյուրերի ժամանում</li>
+      <li>16:00 – Պսակադրության արարողություն</li>
+      <li>18:00 – Հարսանյաց հանդես</li>
+      <li>00:00 – Միջոցառման ավարտ</li>
+    </ul>
+  </section>
+
+  <section class="note">
+    <p>❗ Սիրելի՛ հյուրեր, եկեք վայելենք այս գեղեցիկ օրը առանց մեր փոքրիկ բալիկների։</p>
+    <p>❗ Խնդրում ենք խուսափել սպիտակ երանգով զգեստներից։</p>
+  </section>
+
+  <section class="group">
+    <p>📸 Բոլորիս հարմարության համար ստեղծել ենք Telegram խումբ՝ կիսվելու հարսանիքի լուսանկարներով և տեսանյութերով։</p>
+    <a href="https://t.me/your_group_link" target="_blank" class="btn">Միանալ Telegram խմբին</a>
+  </section>
+
+  <section class="rsvp">
+    <h2>RSVP</h2>
+    <p>Խնդրում ենք լրացնել հարցաթերթիկը մինչև սեպտեմբերի 15-ը։</p>
+    <form action="https://formspree.io/f/your-form-id" method="POST">
+      <input type="text" name="name" placeholder="Ձեր անունը" required>
+      <input type="email" name="email" placeholder="Էլ․ հասցե" required>
+      <textarea name="message" placeholder="Հաղորդագրություն (ըստ ցանկության)"></textarea>
+      <button type="submit">Ուղարկել</button>
+    </form>
+  </section>
+
+  <section class="map">
+    <h2>Քարտեզ</h2>
+    <iframe src="https://www.google.com/maps/embed?pb=..." width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+  </section>
+
+  <footer>
+    <p>With Love, Anna & David 💕</p>
+  </footer>
+
 </body>
 </html>

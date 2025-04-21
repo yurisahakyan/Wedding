@@ -1,54 +1,141 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Wedding Invitation</title>
-  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Open+Sans:wght@300;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
+/* Global Styles */
+body {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  background-color: #f9f7f6;
+  color: #333;
+  line-height: 1.6;
+}
 
-  <div class="hero">
-    <h1>Anna & David</h1>
-    <p>June 15, 2025 - Yerevan, Armenia</p>
-    <p>SAVE THE DATE</p>
-  </div>
+h1, h2 {
+  font-family: 'Great Vibes', cursive;
+  color: #8e4e4d;
+  margin-bottom: 10px;
+}
 
-  <section class="section">
-    <h2>You're Invited</h2>
-    <p>We joyfully invite you to join us on our wedding day as we celebrate love, laughter, and happily ever after.</p>
-  </section>
+h1 {
+  font-size: 4rem;
+  margin: 0;
+}
 
-  <section class="section">
-    <h2>Event Details</h2>
-    <p><strong>Ceremony:</strong> 3:00 PM at St. Hovhannes Church</p>
-    <p><strong>Reception:</strong> 6:00 PM at Tufenkian Heritage Hotel</p>
-  </section>
+h2 {
+  font-size: 2.5rem;
+}
 
-  <section class="section schedule">
-    <h2>Schedule</h2>
-    <ul>
-      <li>15:00 - Guest Arrival</li>
-      <li>15:30 - Ceremony</li>
-      <li>18:00 - Reception Dinner</li>
-      <li>00:00 - Farewell</li>
-    </ul>
-  </section>
+/* Hero Section */
+.hero {
+  background-image: url('your-image-url.jpg'); /* Add a background image here */
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  color: white;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
 
-  <section class="section rsvp">
-    <h2>RSVP</h2>
-    <form action="https://formspree.io/f/your-form-id" method="POST">
-      <input type="text" name="name" placeholder="Your Name" required>
-      <input type="email" name="email" placeholder="Your Email" required>
-      <textarea name="message" placeholder="Leave a message..." rows="4"></textarea>
-      <button type="submit">Send RSVP</button>
-    </form>
-  </section>
+.hero-content {
+  z-index: 2;
+}
 
-  <footer>
-    <p>With Love, Anna & David 💖</p>
-  </footer>
+.date {
+  font-size: 1.5rem;
+  margin-top: 10px;
+}
 
-</body>
-</html>
+.save-the-date {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-top: 15px;
+  text-transform: uppercase;
+}
+
+/* Info Section */
+.info {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.info p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+}
+
+/* Event Details Section */
+.details {
+  padding: 40px 20px;
+  background-color: #f0e6e1;
+  text-align: center;
+}
+
+.details p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+/* Schedule Section */
+.schedule {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.schedule ul {
+  list-style: none;
+  padding: 0;
+}
+
+.schedule li {
+  font-size: 1.2rem;
+  margin-bottom: 12px;
+}
+
+/* RSVP Section */
+.rsvp {
+  padding: 40px 20px;
+  background-color: #f0e6e1;
+  text-align: center;
+}
+
+.rsvp form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 500px;
+  margin: auto;
+}
+
+.rsvp input, .rsvp textarea {
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  margin: 5px 0;
+}
+
+.rsvp button {
+  padding: 14px;
+  font-size: 1.1rem;
+  background-color: #8e4e4d;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.rsvp button:hover {
+  background-color: #7a3e3b;
+}
+
+/* Footer Section */
+footer {
+  text-align: center;
+  padding: 30px 20px;
+  background-color: #8e4e4d;
+  color: white;
+  font-size: 1rem;
+  letter-spacing: 1px;
+}

@@ -49,7 +49,7 @@ myAudio=document.getElementById("bg-sound");
 let fadeTime = 300;//Врямя смены иконок
 myAudio.volume=0.4;//Задаём громкость
 $(".stopbgmusic").hide();
-$(".playbgmusic").click(function(e) {
+$(".playbgmusic") {
     myAudio.play(); $(this).fadeOut(fadeTime);
     $(".stopbgmusic").fadeIn(fadeTime);
 })
